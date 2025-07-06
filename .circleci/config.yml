@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  aqua: aquaproj/aqua@0.4.0
+  aqua: aquaproj/aqua@dev:pr-862
 
 workflows:
   build:
@@ -17,7 +17,7 @@ jobs:
             apk add git curl bash
       - checkout
       - aqua/aqua:
-          aqua_version: v2.27.4
+          aqua_version: v2.53.3
           aqua_log_level: debug
           aqua_config: aqua.yaml
           aqua_only_link: false
