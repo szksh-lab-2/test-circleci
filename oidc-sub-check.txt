@@ -1,1 +1,1 @@
-trigger pull_request
+retrigger
